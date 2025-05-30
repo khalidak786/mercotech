@@ -9,6 +9,7 @@
             --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
+        /* Reset and base styles */
         * {
             margin: 0;
             padding: 0;
@@ -16,59 +17,47 @@
         }
 
         body {
-            font-family: var(--font-main);
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            color: var(--text-color);
         }
 
         /* Top Contact Bar */
         .contact-bar {
-            background-color: var(--secondary-color);
-            color: var(--text-light);
-            padding: 0.5rem 1rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-            font-size: 0.9rem;
+            background: #333;
+            color: white;
+            padding: 0.5rem 0;
         }
 
         .contact-info {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
         }
 
         .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .contact-item i {
-            color: var(--accent-color);
+            margin-left: 2rem;
         }
 
         /* Navigation */
         .header {
-            background-color: var(--primary-color);
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
         .logo {
-            color: var(--text-light);
+            color: var(--primary-color);
             font-weight: bold;
             font-size: 1.5rem;
             margin-bottom: 1rem;
             text-align: center;
-        }
-
-        .nav-toggle {
+        }            .nav-toggle {
             display: block;
             background: none;
             border: none;
-            color: var(--text-light);
+            color: var(--text-color);
             font-size: 1.5rem;
             cursor: pointer;
             margin: 0 auto;
@@ -87,7 +76,7 @@
         }
 
         .nav-item a {
-            color: var(--text-light);
+            color: var(--text-color);
             text-decoration: none;
             font-weight: 500;
             padding: 0.5rem 1rem;

@@ -3,384 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Merco Consultancy Ltd provides cutting-edge IT services and consultancy to help your business thrive in the digital age. Expert solutions in cloud, cybersecurity, and software development.">
-    <meta name="keywords" content="IT Services, IT Consultancy, Cloud Solutions, Cybersecurity, Software Development, Data Analytics, UK IT Services, Merco Consultancy">
-    <meta name="author" content="Merco Consultancy Ltd">
-    <title>Merco Consultancy - IT Services & Consultancy</title>
-    
-    <!-- SVG Favicon - Modern, crisp, and professional -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231a2c3e' rx='20'/%3E%3Cpath d='M30,70 L30,40 L45,55 L60,40 L60,70 L50,70 L50,52 L45,58 L40,52 L40,70 Z' fill='%234dc3c3'/%3E%3Ccircle cx='70' cy='45' r='8' fill='%23ffb347'/%3E%3Cpath d='M68,52 L72,52 L70,58 Z' fill='%23ffb347'/%3E%3Ctext x='50' y='88' font-size='14' font-family='Arial, sans-serif' font-weight='bold' text-anchor='middle' fill='%23eef4ff'%3EMC%3C/text%3E%3C/svg%3E">
-    <!-- Fallback PNG favicon for older browsers -->
-    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGeSURBVHgB7Zc9TgJBFMeHqKVYeAIPT28hrbUewVvwBhtv4C28gY1eQU/AETRKGz/AyqXhA5Z9L2Z2lwHbZRflT3YhCb+ZefPezrwPEBKJRCKRSCQSif/AG8CjtmEaW0JzAOf5DqRmdGC3DZ+B09wNjsFZAKfYD5nMnyVAn2F+KYR1CBNAGmR4gzh7cIu2YJshFZ1nORqgQ0sOpgkyJKFJJiYoSJLlWYDEJBlWrwv7OxvSd9tiY4KWqHYEJH6R5RheDvhZbUBMzvhaqg6CIpEI0eA6BKpOecCidpJl14ZJj1C+sH0HJpRrC1JQlYqM/YvMr1A4bCj7TInw6LtHnK2hOjGJYhLDJIZJDJMYJjFMYpjEMIlhEsMkhkkMkxgmMUximMQwiWESwySGSQyTGCYxTGKYxDCJYRLDJIZJDJMYJjHMcwCSOcse+LoltiSqOeAYzAEO3Tt1+E5AqP2T7JJuE8O1A8ZgyuG7WU8XAjJteVJgByzmOzZcC0hXHhOwAyaTSCQSiUQikfgH3gHhSzwR/vcyPwAAAABJRU5ErkJggg==">
-    
-    <style>
-        /* ------------------------------
-           Modern Reset & Base Styles
-        -------------------------------- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.5;
-            color: #1e2a3a;
-            background-color: #ffffff;
-            scroll-behavior: smooth;
-        }
-
-        /* custom font fallback */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap');
-
-        .container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* Buttons */
-        .btn {
-            display: inline-block;
-            background-color: #2c7da0;
-            color: white;
-            font-weight: 600;
-            padding: 0.75rem 1.75rem;
-            border-radius: 40px;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-
-        .btn:hover {
-            background-color: #1f5e7a;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(44,125,160,0.2);
-        }
-
-        /* Top Contact Bar */
-        .contact-bar {
-            background-color: #0f2b3b;
-            color: #eef4ff;
-            padding: 0.6rem 2rem;
-            display: flex;
-            justify-content: flex-end;
-            font-size: 0.85rem;
-        }
-
-        .contact-info {
-            display: flex;
-            gap: 1.8rem;
-            flex-wrap: wrap;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .contact-item i {
-            font-size: 0.9rem;
-            color: #4dc3c3;
-        }
-
-        /* Header & Navigation */
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.2rem 2rem;
-            background-color: white;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            flex-wrap: wrap;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-            background: linear-gradient(135deg, #1a4b6e, #2c7da0);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-
-        .nav-menu {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-            align-items: center;
-        }
-
-        .nav-item a {
-            text-decoration: none;
-            font-weight: 600;
-            color: #1e2a3a;
-            transition: color 0.2s;
-        }
-
-        .nav-item a:not(.btn):hover {
-            color: #2c7da0;
-        }
-
-        .nav-item .btn {
-            background-color: #2c7da0;
-            padding: 0.5rem 1.25rem;
-            color: white;
-        }
-
-        .nav-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.8rem;
-            cursor: pointer;
-            color: #1e2a3a;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #eef7fc 0%, #e2f0f5 100%);
-            text-align: center;
-            padding: 5rem 2rem;
-            border-radius: 0 0 40px 40px;
-            margin-bottom: 2rem;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            max-width: 800px;
-            margin: 0 auto 1rem;
-            color: #0f2b3b;
-            letter-spacing: -0.02em;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            max-width: 650px;
-            margin: 0 auto 2rem;
-            color: #2c4b5f;
-        }
-
-        /* Section Titles */
-        .section-title {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: #0f2b3b;
-            position: relative;
-            display: inline-block;
-        }
-        
-        section {
-            margin-bottom: 5rem;
-            scroll-margin-top: 100px;
-        }
-
-        /* Card Grid */
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 2rem;
-            margin-top: 2.5rem;
-        }
-
-        .card {
-            background: #ffffff;
-            border-radius: 24px;
-            overflow: hidden;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-            border: 1px solid #eef2f6;
-        }
-
-        .card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
-            border-color: #cbdde6;
-        }
-
-        .card-img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .card-content {
-            padding: 1.5rem;
-        }
-
-        .card-title {
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-bottom: 0.75rem;
-            color: #1a4b6e;
-        }
-
-        .card-text {
-            color: #334e68;
-            margin-bottom: 1.25rem;
-            line-height: 1.5;
-        }
-
-        .card-link {
-            font-weight: 600;
-            color: #2c7da0;
-            text-decoration: none;
-            transition: gap 0.2s;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.3rem;
-        }
-
-        .card-link:hover {
-            gap: 0.6rem;
-            color: #1f5e7a;
-        }
-
-        /* Footer */
-        .footer {
-            background-color: #0b1c26;
-            color: #cfdfed;
-            padding: 3rem 2rem 1.5rem;
-            margin-top: 4rem;
-            border-radius: 40px 40px 0 0;
-        }
-
-        .footer-grid {
-            max-width: 1280px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer-title {
-            font-size: 1.2rem;
-            font-weight: 700;
-            margin-bottom: 1.2rem;
-            color: white;
-            letter-spacing: -0.2px;
-        }
-
-        .footer-links {
-            list-style: none;
-        }
-
-        .footer-links li {
-            margin-bottom: 0.6rem;
-        }
-
-        .footer-links a {
-            color: #bdd4e2;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .footer-links a:hover {
-            color: #4dc3c3;
-        }
-
-        .footer-contact .contact-item {
-            margin-bottom: 0.8rem;
-            color: #bdd4e2;
-        }
-
-        .footer-contact .contact-item i {
-            width: 24px;
-            color: #4dc3c3;
-        }
-
-        .copyright {
-            text-align: center;
-            border-top: 1px solid #1f3a48;
-            padding-top: 1.8rem;
-            font-size: 0.85rem;
-            color: #8ba9bc;
-            max-width: 1280px;
-            margin: 0 auto;
-        }
-
-        /* Responsive */
-        @media (max-width: 900px) {
-            .nav-menu {
-                position: fixed;
-                left: -100%;
-                top: 80px;
-                flex-direction: column;
-                background-color: white;
-                width: 100%;
-                text-align: center;
-                transition: 0.3s;
-                box-shadow: 0 20px 30px rgba(0,0,0,0.1);
-                padding: 2rem 0;
-                gap: 1.5rem;
-                z-index: 999;
-            }
-
-            .nav-menu.active {
-                left: 0;
-            }
-
-            .nav-toggle {
-                display: block;
-            }
-
-            .header {
-                padding: 1rem 1.5rem;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .container {
-                padding: 0 1.25rem;
-            }
-            
-            .contact-bar {
-                justify-content: center;
-            }
-        }
-
-        @media (max-width: 640px) {
-            .hero {
-                padding: 3rem 1rem;
-            }
-            .card-grid {
-                grid-template-columns: 1fr;
-            }
-            .footer-grid {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-            .footer-contact .contact-item {
-                justify-content: center;
-            }
-        }
-
-        /* Extra polish */
-        a:focus-visible, button:focus-visible {
-            outline: 2px solid #2c7da0;
-            outline-offset: 2px;
-        }
-        
-        #about p, #services > p, #industries > p {
-            max-width: 800px;
-            font-size: 1.05rem;
-            color: #2c4b5f;
-        }
-    </style>
+    <meta name="description" content="Mercotech provides cutting-edge IT services and consultancy to help your business thrive in the digital age. Expert solutions in cloud, cybersecurity, and software development.">
+    <meta name="keywords" content="IT Services, IT Consultancy, Cloud Solutions, Cybersecurity, Software Development, Data Analytics, UK IT Services">
+    <meta name="author" content="Mercotech Ltd">
+    <title>Mercotech - IT Services & Consultancy</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -389,23 +16,23 @@
         <div class="contact-info">
             <div class="contact-item">
                 <i class="fas fa-phone"></i>
-                <span>+44 7788 996312</span>
+                <span>+447788996312</span>
             </div>
             <div class="contact-item">
                 <i class="fas fa-envelope"></i>
-                <span>hello@merco-consultancy.co.uk</span>
+                <span>contact@mercotech.co.uk</span>
             </div>
         </div>
     </div>
 
     <!-- Header with Navigation -->
     <header class="header">
-        <div class="logo">MERCO CONSULTANCY</div>
-        <button class="nav-toggle" aria-label="toggle navigation" id="navToggle">
+        <div class="logo">MERCOTECH</div>
+        <button class="nav-toggle" aria-label="toggle navigation">
             <i class="fas fa-bars"></i>
         </button>
         <nav>
-            <ul class="nav-menu" id="navMenu">
+            <ul class="nav-menu">
                 <li class="nav-item"><a href="#about">About Us</a></li>
                 <li class="nav-item"><a href="#services">Our Services</a></li>
                 <li class="nav-item"><a href="#industries">Industries</a></li>
@@ -417,20 +44,20 @@
     <!-- Hero Banner -->
     <section class="hero">
         <h1>Innovative IT Solutions for Your Business</h1>
-        <p>Merco Consultancy Ltd provides cutting-edge IT services and expert consultancy to help your business thrive in the digital age.</p>
+        <p>Mercotech provides cutting-edge IT services and consultancy to help your business thrive in the digital age.</p>
         <a href="#contact" class="btn">Get Started</a>
     </section>
 
     <!-- Main Content -->
     <main class="container">
         <section id="about">
-            <h2 class="section-title">About Merco Consultancy</h2>
-            <p>Merco Consultancy Ltd is a premier IT services and consultancy firm based in the UK, specializing in delivering tailored technology solutions to businesses of all sizes. With a team of certified architects, cloud specialists, and cybersecurity experts, we help clients navigate digital transformation while reducing complexity and driving measurable growth.</p>
+            <h2 class="section-title">About Mercotech</h2>
+            <p>Mercotech is a leading IT services and consultancy firm based in the UK, specializing in delivering tailored technology solutions to businesses of all sizes. With our team of experienced professionals, we help clients navigate the complex world of technology to achieve their business objectives.</p>
         </section>
 
         <section id="services">
             <h2 class="section-title">Our Services</h2>
-            <p>We offer a comprehensive range of IT services designed to meet your business needs — from strategic consulting to full-cycle implementation and support.</p>
+            <p>We offer a comprehensive range of IT services designed to meet your business needs:</p>
             
             <div class="card-grid">
                 <div class="card">
@@ -438,7 +65,7 @@
                     <div class="card-content">
                         <h3 class="card-title">IT Consultancy</h3>
                         <p class="card-text">Strategic technology advice to align IT with your business goals and drive digital transformation.</p>
-                        <a href="#" class="card-link">Learn more →</a>
+                        <a href="services/it-consultancy.html" class="card-link">Learn more →</a>
                     </div>
                 </div>
                 
@@ -447,7 +74,7 @@
                     <div class="card-content">
                         <h3 class="card-title">Cloud Solutions</h3>
                         <p class="card-text">Migration, management and optimization of cloud infrastructure for scalability and cost-efficiency.</p>
-                        <a href="#" class="card-link">Learn more →</a>
+                        <a href="services/cloud-solutions.html" class="card-link">Learn more →</a>
                     </div>
                 </div>
                 
@@ -456,7 +83,7 @@
                     <div class="card-content">
                         <h3 class="card-title">Cybersecurity</h3>
                         <p class="card-text">Comprehensive protection for your systems, data and network against evolving threats.</p>
-                        <a href="#" class="card-link">Learn more →</a>
+                        <a href="services/cybersecurity.html" class="card-link">Learn more →</a>
                     </div>
                 </div>
                 
@@ -465,7 +92,7 @@
                     <div class="card-content">
                         <h3 class="card-title">Managed IT Services</h3>
                         <p class="card-text">Proactive monitoring and management of your IT infrastructure by our expert team.</p>
-                        <a href="#" class="card-link">Learn more →</a>
+                        <a href="services/managed-it.html" class="card-link">Learn more →</a>
                     </div>
                 </div>
                 
@@ -474,7 +101,7 @@
                     <div class="card-content">
                         <h3 class="card-title">Software Development</h3>
                         <p class="card-text">Custom software solutions tailored to your specific business processes and requirements.</p>
-                        <a href="#" class="card-link">Learn more →</a>
+                        <a href="services/software-development.html" class="card-link">Learn more →</a>
                     </div>
                 </div>
                 
@@ -483,7 +110,7 @@
                     <div class="card-content">
                         <h3 class="card-title">Data Analytics</h3>
                         <p class="card-text">Turn your data into actionable insights with our advanced analytics solutions.</p>
-                        <a href="#" class="card-link">Learn more →</a>
+                        <a href="services/data-analytics.html" class="card-link">Learn more →</a>
                     </div>
                 </div>
             </div>
@@ -491,7 +118,7 @@
 
         <section id="industries">
             <h2 class="section-title">Industries We Serve</h2>
-            <p>Our expertise spans across multiple industries, providing specialized solutions for each sector's unique challenges — from compliance to operational efficiency.</p>
+            <p>Our expertise spans across multiple industries, providing specialized solutions for each sector's unique challenges.</p>
             
             <div class="card-grid">
                 <div class="card">
@@ -499,7 +126,7 @@
                     <div class="card-content">
                         <h3 class="card-title">Healthcare</h3>
                         <p class="card-text">Secure, compliant technology solutions for hospitals, clinics and healthcare providers.</p>
-                        <a href="#" class="card-link">Learn more →</a>
+                        <a href="industries/healthcare.html" class="card-link">Learn more →</a>
                     </div>
                 </div>
                 
@@ -508,7 +135,7 @@
                     <div class="card-content">
                         <h3 class="card-title">Finance</h3>
                         <p class="card-text">Technology solutions for banks, insurance companies and financial institutions.</p>
-                        <a href="#" class="card-link">Learn more →</a>
+                        <a href="industries/finance.html" class="card-link">Learn more →</a>
                     </div>
                 </div>
                 
@@ -517,7 +144,7 @@
                     <div class="card-content">
                         <h3 class="card-title">Manufacturing</h3>
                         <p class="card-text">Industry 4.0 solutions to optimize production and supply chain operations.</p>
-                        <a href="#" class="card-link">Learn more →</a>
+                        <a href="industries/manufacturing.html" class="card-link">Learn more →</a>
                     </div>
                 </div>
                 
@@ -526,7 +153,7 @@
                     <div class="card-content">
                         <h3 class="card-title">Retail</h3>
                         <p class="card-text">Omnichannel solutions to enhance customer experience and streamline operations.</p>
-                        <a href="#" class="card-link">Learn more →</a>
+                        <a href="industries/retail.html" class="card-link">Learn more →</a>
                     </div>
                 </div>
                 
@@ -535,16 +162,16 @@
                     <div class="card-content">
                         <h3 class="card-title">Education</h3>
                         <p class="card-text">Technology solutions for schools, universities and e-learning platforms.</p>
-                        <a href="#" class="card-link">Learn more →</a>
+                        <a href="industries/education.html" class="card-link">Learn more →</a>
                     </div>
                 </div>
                 
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Public Sector" class="card-img">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Government" class="card-img">
                     <div class="card-content">
-                        <h3 class="card-title">Government & Public</h3>
+                        <h3 class="card-title">Government</h3>
                         <p class="card-text">Secure, scalable solutions for public sector organizations and agencies.</p>
-                        <a href="#" class="card-link">Learn more →</a>
+                        <a href="industries/government.html" class="card-link">Learn more →</a>
                     </div>
                 </div>
             </div>
@@ -555,31 +182,31 @@
     <footer class="footer" id="contact">
         <div class="footer-grid">
             <div class="footer-about">
-                <h3 class="footer-title">MERCO CONSULTANCY</h3>
-                <p>Providing innovative IT solutions and consultancy services to help businesses transform, scale, and lead with confidence.</p>
+                <h3 class="footer-title">MERCOTECH</h3>
+                <p>Providing innovative IT solutions and consultancy services to help businesses transform and grow.</p>
             </div>
 
             <div class="footer-services">
                 <h3 class="footer-title">Our Services</h3>
                 <ul class="footer-links">
-                    <li><a href="#">IT Consultancy</a></li>
-                    <li><a href="#">Cloud Solutions</a></li>
-                    <li><a href="#">Cybersecurity</a></li>
-                    <li><a href="#">Managed IT Services</a></li>
-                    <li><a href="#">Software Development</a></li>
-                    <li><a href="#">Data Analytics</a></li>
+                    <li><a href="services/it-consultancy.html">IT Consultancy</a></li>
+                    <li><a href="services/cloud-solutions.html">Cloud Solutions</a></li>
+                    <li><a href="services/cybersecurity.html">Cybersecurity</a></li>
+                    <li><a href="services/managed-it.html">Managed IT Services</a></li>
+                    <li><a href="services/software-development.html">Software Development</a></li>
+                    <li><a href="services/data-analytics.html">Data Analytics</a></li>
                 </ul>
             </div>
 
             <div class="footer-industries">
                 <h3 class="footer-title">Industries</h3>
                 <ul class="footer-links">
-                    <li><a href="#">Healthcare</a></li>
-                    <li><a href="#">Finance</a></li>
-                    <li><a href="#">Manufacturing</a></li>
-                    <li><a href="#">Retail</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Public Sector</a></li>
+                    <li><a href="industries/healthcare.html">Healthcare</a></li>
+                    <li><a href="industries/finance.html">Finance</a></li>
+                    <li><a href="industries/manufacturing.html">Manufacturing</a></li>
+                    <li><a href="industries/retail.html">Retail</a></li>
+                    <li><a href="industries/education.html">Education</a></li>
+                    <li><a href="industries/government.html">Government</a></li>
                 </ul>
             </div>
 
@@ -587,72 +214,24 @@
                 <h3 class="footer-title">Contact Us</h3>
                 <div class="contact-item">
                     <i class="fas fa-phone"></i>
-                    <span>+44 7788 996312</span>
+                    <span>+44778899631</span>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
-                    <span>hello@merco-consultancy.co.uk</span>
+                    <span>contact@mercotech.co.uk</span>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>11 Pine Hill, Epsom, KT18 7BH, United Kingdom</span>
+                    <span>11 Pine Hill, Epsom, KT18 7BH, U.K.</span>
                 </div>
             </div>
         </div>
 
         <div class="copyright">
-            <p>&copy; 2025 Merco Consultancy Ltd. All rights reserved. Driving digital innovation.</p>
+            <p>&copy; 2025 Mercotech Ltd. All rights reserved.</p>
         </div>
     </footer>
 
-    <script>
-        // Mobile navigation toggle
-        const navToggle = document.getElementById('navToggle');
-        const navMenu = document.getElementById('navMenu');
-
-        if (navToggle && navMenu) {
-            navToggle.addEventListener('click', () => {
-                navMenu.classList.toggle('active');
-                // change icon for better UX
-                const icon = navToggle.querySelector('i');
-                if (navMenu.classList.contains('active')) {
-                    icon.classList.remove('fa-bars');
-                    icon.classList.add('fa-times');
-                } else {
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
-                }
-            });
-
-            // Close menu when clicking a link (smooth)
-            const navLinks = document.querySelectorAll('.nav-item a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    if (navMenu.classList.contains('active')) {
-                        navMenu.classList.remove('active');
-                        const icon = navToggle.querySelector('i');
-                        icon.classList.remove('fa-times');
-                        icon.classList.add('fa-bars');
-                    }
-                });
-            });
-        }
-
-        // Smooth scroll for anchor links (optional enhancement)
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                const targetId = this.getAttribute('href');
-                if (targetId === "#" || targetId === "") return;
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    e.preventDefault();
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
